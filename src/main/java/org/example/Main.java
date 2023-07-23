@@ -14,8 +14,8 @@ public class Main {
         client.addClient("John");
         client.getAllClient();
         client.getClient(5L);
-        client.updateClient(15L, "Marc");
-        client.deleteClient(15L);
+        client.updateClient(11L, "Marc");
+        client.deleteClient(11L);
         client.getAllClient();
 
 
