@@ -15,7 +15,7 @@ public class HibernateUtils {
                 .addAnnotatedClass(Client.class)
                 .addAnnotatedClass(Planet.class)
                 .buildSessionFactory();
-        flywayMigration(PropertyReader.getConnectionUrlForPostgres(),
+        flywayMigration(PropertyReader.getConnectionUrl(),
                 "",
                 "");
     }

@@ -7,7 +7,7 @@ import java.util.Optional;
 import java.util.Properties;
 
 public class PropertyReader {
-        public static String getConnectionUrlForPostgres() {
+        public static String getConnectionUrl() {
             return Objects.requireNonNull(getProperties())
                     .map(properties -> properties.getProperty("hibernate.connection.url")).orElse(null);
         }
